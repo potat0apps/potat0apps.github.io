@@ -16,6 +16,17 @@
             height: 100%;
         }
 
+        .container {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .offset {
+            transform: translate(-92px, -20px);
+        }
+
         .logo-container {
             position: relative;
         }
@@ -27,13 +38,11 @@
 
         .img2 {
             position: absolute;
-            z-index: 2;
             content: url("potat0.png");
         }
 
         .img3 {
             position: absolute;
-            z-index: 1;
             content: url("potat0.png");
         }
 
@@ -53,13 +62,6 @@
             animation: glitch3 2.5s infinite;
         }
 
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-        }
         /*Keyframes*/
 
         @keyframes glitch1 {
@@ -267,10 +269,12 @@
 
 <body>
     <div class="container">
-        <div id="logo-container">
-            <div class="img1 anim"> </div>
-            <div class="img2 anim"> </div>
-            <div class="img3 anim"> </div>
+        <div class="offset">
+            <div class="logo-container">
+                <div class="anim img1"></div>
+                <div class="anim img2"></div>
+                <div class="anim img3"></div>
+            </div>
         </div>
     </div>
 </body>
