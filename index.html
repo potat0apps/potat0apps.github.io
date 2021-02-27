@@ -15,9 +15,9 @@
     <title>
         potat0
     </title>
-    
+
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-    
+
     <style>
         * {
             padding: 0;
@@ -37,15 +37,56 @@
             width: 100%;
         }
 
-        .logo {
-            content: url("potat0.png");
+        .inner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
+
+        .logo {
+
+            content: url("potat0.png");
+            padding: 24px;
+
+        }
+
+        a {
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 10px;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+            text-decoration: none;
+        }
+
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="logo"> </div>
+        <div class="inner-container">
+            <div class="logo"> </div>
+            <div>
+                <a href="mailto:contact@potat0.com">
+                    <img src="email.svg" aria-hidden="true" style="height:24px;width:24px" alt="Email">
+                </a>
+                <a href="https://twitter.com/potat0apps">
+                    <img src="twitter.svg" aria-hidden="true" style="height:24px;width:24px" alt="Twitter">
+                </a>
+                <a href="https://www.facebook.com/potat0apps">
+                    <img src="facebook.svg" aria-hidden="true" style="height:24px;width:24px" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/potat0apps/">
+                    <img src="instagram.svg" aria-hidden="true" style="height:24px;width:24px" alt="Instagram">
+                </a>
+                <a href="https://discord.gg/7h4bQqcFmX">
+                    <img src="discord.svg" aria-hidden="true" style="height:24px;width:24px" alt="Discord">
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 
