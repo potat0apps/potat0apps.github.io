@@ -4,6 +4,7 @@
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQJ1ZJLYLM"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -11,6 +12,8 @@
 
         gtag('config', 'G-RQJ1ZJLYLM');
     </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
         potat0
@@ -47,21 +50,51 @@
         .logo {
 
             content: url("potat0.png");
-            padding: 24px;
-
+            padding: 48px;
+            width: 184px;
+            height: 40px
         }
 
         a {
             background: none;
             color: inherit;
             border: none;
-            padding: 10px;
+            padding: 24px;
             font: inherit;
             cursor: pointer;
             outline: inherit;
             text-decoration: none;
         }
 
+        .flex-grid {
+            display: flex;
+        }
+
+        .flex-grid .col {
+            flex: 1;
+        }
+
+        .flex-grid-thirds {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex-grid-thirds .col {
+            width: 32%;
+        }
+
+        @media (max-width: 400px) {
+
+            .flex-grid,
+            .flex-grid-thirds {
+                display: block;
+            }
+
+            .flex-grid-thirds .col {
+                width: 100%;
+                margin: 0 0 24px 0;
+            }
+        }
     </style>
 </head>
 
@@ -69,22 +102,32 @@
     <div class="container">
         <div class="inner-container">
             <div class="logo"> </div>
-            <div>
-                <a href="mailto:contact@potat0.com">
-                    <img src="email.svg" aria-hidden="true" style="height:24px;width:24px" alt="Email">
-                </a>
-                <a href="https://twitter.com/potat0apps">
-                    <img src="twitter.svg" aria-hidden="true" style="height:24px;width:24px" alt="Twitter">
-                </a>
-                <a href="https://www.facebook.com/potat0apps">
-                    <img src="facebook.svg" aria-hidden="true" style="height:24px;width:24px" alt="Facebook">
-                </a>
-                <a href="https://www.instagram.com/potat0apps/">
-                    <img src="instagram.svg" aria-hidden="true" style="height:24px;width:24px" alt="Instagram">
-                </a>
-                <a href="https://discord.gg/7h4bQqcFmX">
-                    <img src="discord.svg" aria-hidden="true" style="height:24px;width:24px" alt="Discord">
-                </a>
+            <div class="flex-grid-thirds">
+                <div class="col">
+                    <a href="mailto:contact@potat0.com">
+                        <img src="email.svg" aria-hidden="true" style="height:24px;width:24px" alt="Email">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://twitter.com/potat0apps">
+                        <img src="twitter.svg" aria-hidden="true" style="height:24px;width:24px" alt="Twitter">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://www.facebook.com/potat0apps">
+                        <img src="facebook.svg" aria-hidden="true" style="height:24px;width:24px" alt="Facebook">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://www.instagram.com/potat0apps/">
+                        <img src="instagram.svg" aria-hidden="true" style="height:24px;width:24px" alt="Instagram">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://discord.gg/7h4bQqcFmX">
+                        <img src="discord.svg" aria-hidden="true" style="height:24px;width:24px" alt="Discord">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
