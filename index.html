@@ -58,10 +58,11 @@
             padding-right: 100px;
             padding-top: 2em;
             padding-bottom: 2em;
+            min-height: 500px;
         }
 
         .footer {
-            position: absolute;
+            position: fixed;
             bottom: 0;
             background-color: #FAFAFA;
             height: 100px;
@@ -132,7 +133,16 @@
             padding-top: 1em;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 850px) {
+
+            .nav {
+                display: flex;
+                height: 80px;
+                align-items: center;
+                justify-content: space-between;
+                margin-left: 20px;
+            }
+
             .hero-text {
                 font-weight: 900;
                 font-size: 24px;
@@ -179,10 +189,6 @@
                 font-size: 20px;
             }
 
-
-            .footer {
-                position: relative;
-            }
         }
     </style>
 </head>
