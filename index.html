@@ -14,6 +14,8 @@
     </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Potato quality apps made by potat0. When we say potato quality we do not mean low resolution. We mean apps with the qualities of a potato: versatile, easily accessible, and hardy. Discover our apps in the app store and try for yourself.">
     <title>
         potat0
     </title>
@@ -57,8 +59,8 @@
             display: flex;
             padding-left: 100px;
             padding-right: 100px;
-            padding-top: 2em;
-            padding-bottom: 2em;
+            padding-top: 1em;
+            padding-bottom: 1em;
         }
 
         .footer {
@@ -107,25 +109,74 @@
             font-size: 32px;
         }
 
-        .app {
+        .apps {
             display: flex;
+            flex-wrap: wrap;
+            padding-top: 1em;
         }
 
+
         .app-item {
-            padding-top: 4em;
+            border-style: solid;
+            border-width: 5px;
+            border-color: #FAFAFA;
+            padding: 20px 10px 10px 10px;
+            margin-right: 1em;
+            margin-top: 1em;
+            width: 33%;
+            max-width: 33%;
+        }
+
+        .app {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1em;
+        }
+
+        .app-icon{
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:60px; width:60px; 
+            background-color: #FFFFFF; 
+            border-radius: 20px; 
+            margin-right: 1em; 
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            margin: 1em;
+
         }
 
         .app-title {
+            display: flex;
+            justify-content: center;
             font-weight: 700;
             font-size: 14pt;
+            padding-bottom: .5em;
         }
 
         .app-description {
+            display: flex;
+            justify-content: center;
             color: #595959;
+            padding-bottom: 1em;
+            text-align: center;
+        }
+
+        .divider {
+
+            background-color: #FAFAFA;
+            height: 2px;
+            width: 100%;
+
         }
 
         .app-actions {
             display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 1em;
         }
 
         .app-actions>div {
@@ -184,6 +235,9 @@
 
             .app-item {
                 padding-top: 2em;
+                width: 100%;
+                max-width: 100%;
+                margin-right: 0;
             }
 
             .title {
@@ -236,40 +290,66 @@
                     Our Apps
                 </span>
             </div>
-            <div>
-                <div class="app-item">
-                    <div class="app">
-                        <div
-                            style="display:flex;justify-content:center;align-items:center;height:60px; width:60px; background-color: #FFFFFF; border-radius: 20px; margin-right: 1em; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);">
-                            <img src="eazpeaz_icon.png" style="height:50px;width:50px"></img>
-                        </div>
+            <div class="apps">
 
-                        <div>
-                            <div class="app-title">eazpeaz</div>
-                            <div class="app-description">Ace your next quiz by studying flashcards!</div>
-                            <div class="app-actions">
-                                <div>
-                                    <a href="https://web.eazpeaz.com">
-                                        <img style="height: 36px; color: #595959;" src="browser.svg" alt="WWW" />
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://apps.apple.com/us/app/id1549631561">
-                                        <img style="height: 30px; color: #595959;" src="apple.svg" alt="Apple" />
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://play.google.com/store/apps/details?id=com.potat0.eazpeaz">
+                    <div class="app-item">
+                        <div class="app">
+                            <div
+                                class="app-icon">
+                                <img src="eazpeaz_icon.png" style="height:50px;width:50px"></img>
+                            </div>
 
-                                        <img style="height: 34px; color: #595959;" src="shop.svg" alt="Google" />
-                                    </a>
+                            <div>
+                                <div class="app-title">eazpeaz</div>
+                                <div class="app-description">Ace your next quiz by studying flashcards!</div>
+                                <div class="divider"></div>
+                                <div class="app-actions">
+                                    <div>
+                                        <a href="https://web.eazpeaz.com">
+                                            <img style="height: 36px; color: #595959;" src="browser.svg" alt="WWW" />
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://apps.apple.com/us/app/id1549631561">
+                                            <img style="height: 30px; color: #595959;" src="apple.svg" alt="Apple" />
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://play.google.com/store/apps/details?id=com.potat0.eazpeaz">
+
+                                            <img style="height: 34px; color: #595959;" src="shop.svg" alt="Google" />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
+                    <div class="app-item">
+                        <div class="app">
+                            <div
+                                class="app-icon">
+                                <img src="stacky-block-icon.webp" style="height:50px;width:50px"></img>
+                            </div>
+
+                            <div>
+                                <div class="app-title">Stacky Block</div>
+                                <div class="app-description">Drop blocks at precise moments and stack the blocks as high as you can.</div>
+                                <div class="divider"></div>
+                                <div class="app-actions">
+                                    <div>
+                                        <a href="https://play.google.com/store/apps/details?id=com.potat0.stackyblock">
+
+                                            <img style="height: 34px; color: #595959;" src="shop.svg" alt="Google" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
             </div>
+
         </div>
     </section>
 
